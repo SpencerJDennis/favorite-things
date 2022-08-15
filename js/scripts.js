@@ -24,14 +24,16 @@ const newArray = [];
 newArray.push(secondItem, firstItem);
 newArray.push(originalArray[2]);
 console.log(newArray)
+
+const ul = document.createElement("ul");
+
+const liOne = document.createElement("li");
+const liTwo = document.createElement("li");
+const liThree = document.createElement("li");
+
+liOne.append(secondItem)
+liTwo.append(firstItem);
+liThree.append(thirdItem)
+ul.append(liOne, liTwo, liThree);
+document.body.append(ul);
 }
-
-
-
-//take the form inputs
-// put them into an array
-
-//for our own use we're gonna
-//write code that identifies what element is in specific spots in the array
-// write code that adds the found elements to a new array (using array.prototype.push())
-//display they new array in our page's html as an unordered list like we did last practice (the only new thing is that we're getting the list items from data we're pulling from the forms)
